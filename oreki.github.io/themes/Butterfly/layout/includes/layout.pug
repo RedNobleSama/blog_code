@@ -41,7 +41,6 @@ html(lang=config.language data-theme=theme.display_mode)
     include ./head.pug
     include ./config.pug
   body
-  
     if theme.fireworks && theme.fireworks.enable
       canvas.fireworks
     //- !=partial('includes/header.pug', {}, {cache: true})
