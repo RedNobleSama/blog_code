@@ -1,11 +1,12 @@
 ---
 title: {{ title }}
 date: {{ date }}
+update:
 tags:
-categories: 
+categories:
 toc: true
 mathjx: true
-cover: 
+cover: /post_top_img/{{ title }}/head_img.png
 ---
 
 <!-- more -->

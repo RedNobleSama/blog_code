@@ -129,7 +129,7 @@ lodding_bg:
 #  post: /img/loading.gif ##加載動畫
 
 post_meta:
-  date_type: both # or created or updated 文章日期是创建日或者更新日或都显示
+  date_type: created # or created or updated 文章日期是创建日或者更新日或都显示
   categories: true # or false 是否显示分类
   tags: true # or false 是否显示标签
 
@@ -361,7 +361,7 @@ canvas_ribbon:
 
 # 動態彩帶
 canvas_ribbon_piao:
-  enable: false
+  enable: true
   mobile: false # false 手機端不顯示 true 手機端顯示
 
 # canvas_nest

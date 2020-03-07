@@ -3,7 +3,7 @@ title: 关于自己
 date: 2019-03-06 03:11:51
 type: "about"
 comment: false
-top_img: /topimg/猫猫.jpg
+top_img: /topimg/猫.jpg
 ---
 
 >stay hungry stay foolish.
