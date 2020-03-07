@@ -6,7 +6,7 @@ date: 2018-08-06 11:43:36
 update: 2018-09-01 06:42:24
 tags: [Git]
 categories: Git
-cover: /post_top_img/git基础操作/head_img.png
+cover: /2018/08/06/git基础操作/添加sshkey.png
 indexing: true
 ---
 
