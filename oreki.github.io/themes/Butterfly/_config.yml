@@ -37,7 +37,7 @@ favicon: https://res.cloudinary.com/oreki/image/upload/v1583610633/%E7%89%A9%E7%
 highlight_theme: light # default / darker / pale night / light / ocean
 highlight_copy: true #代碼複製按鈕
 highlight_lang: true #代碼語言顯示
-highlight_shrink: true # true 全部代碼框不展開，需點擊 '>' 打開 / false 代碼框展開，有'>'點擊按鈕 | none 代碼框展開，不顯示 '>' 按鈕
+highlight_shrink: false # true 全部代碼框不展開，需點擊 '>' 打開 / false 代碼框展開，有'>'點擊按鈕 | none 代碼框展開，不顯示 '>' 按鈕
 
 code_word_wrap: false
 
@@ -340,9 +340,9 @@ tag_ui: # 留空或index
 # 設置網站背景
 # 可設置圖片 或者 顔色
 # 圖片格式 background: url(http://xxxxxx.com/xxx.jpg)
-# 顔色 background: '#49B202'
+# 顔色 background:  '#49B202'
 # 留空 顯示白色
-background:
+background: '#e6e6fa'
 
 # footer是否顯示圖片背景(與top_img一致)
 footer_bg: false

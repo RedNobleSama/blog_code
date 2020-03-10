@@ -6,7 +6,7 @@ tags:
 categories:
 toc: true
 mathjx: true
-cover: /head.png
+cover: /{{ title }}/head.png
 ---
 
 <!-- more -->
