@@ -5,8 +5,8 @@ mathjx: true
 cover: /"Selenium的使用"/head.png
 date: 2019-01-28 16:18:24
 update:
-tags: ['Python']
-categories: Python, Selenuim
+tags: ['Selenuim']
+categories: Selenuim
 ---
 ## Selenium的使用
 

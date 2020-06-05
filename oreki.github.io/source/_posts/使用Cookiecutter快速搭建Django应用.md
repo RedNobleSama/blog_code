@@ -5,8 +5,8 @@ mathjx: true
 cover: /2018/03/16/使用Cookiecutter快速搭建Django应用/head.png
 date: 2019-03-16 05:25:20
 update:
-tags: [Python, Django, Cookiecutter]
-categories: Python, Django, Cookiecutter
+tags: [Djangor]
+categories: Django
 ---
 
 ## 安装Cookiecutter

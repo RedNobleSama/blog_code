@@ -392,7 +392,7 @@ click_heart:
 
 # 點擊出現文字，文字可自行修改
 ClickShowText:
-  enable: false
+  enable: true
   text:
     - 富强
     - 民主
@@ -418,7 +418,7 @@ display_mode: light
 
 # 美化post頁顯示
 post_beautify:
-  enable: false
+  enable: true
   title-prefix-icon: '\f0c1'
   title-prefix-icon-color: "#F47466"
 
@@ -658,5 +658,19 @@ CDN:
 
   translate: /js/tw_cn.js
 
-  aplayer:
-      meting: true
+  ##侧边栏歌单
+aplayer:
+  enable: true
+  js:
+    - https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js
+    - https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js
+  css:
+    - https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.css
+  id: 2884823053
+  server: netease
+  type: playlist
+  fixed: 'true'
+  order: list
+  preload: auto
+  listFolded: 'false'
+  autoplay: 'true'
