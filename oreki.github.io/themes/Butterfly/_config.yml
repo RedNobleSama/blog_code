@@ -9,10 +9,11 @@ menu:
   时间轴: /archives/ || fa fa-archive
   标签: /tags/ || fa fa-tags
   分类: /categories/ || fa fa-folder-open
+  # 游戏: /Game/ || fa fa-folder-open
   # Link: /link/ || fa fa-link
-  # 清单||fa fa-list:
-  #   - 音乐 || /music/ || fa fa-music
-  #   - 照片 || /Gallery/ || fa fa-film
+  娱乐||fa fa-list:
+    - steam || /Game/ || fa fa-steam
+    # - 照片 || /Gallery/ || fa fa-film
   # 音乐: /music/ || fa fa-music
   关于: /about/ || fa fa-heart
 
@@ -54,8 +55,8 @@ copy:
 # ---------------
 social:
   fa fa-github: https://github.com/RedNobleSama
-  fa fa-envelope: 912550157@qq.com
-  fa fa-rss: /atom.xml
+  # fa fa-bilibili: 912550157@qq.com
+  # fa fa-rss: /atom.xml
 
 ####    search    ####
 # Algolia search

@@ -15,5 +15,5 @@ top_img: https://res.cloudinary.com/oreki/image/upload/v1583610496/deaf1af90d528
     Age: 22
     Gender: male
     Github: https://github.com/RedNobleSama
-    Blog: https://www.orekisama.top/
+    Blog: https://www.oreki.world/
 }

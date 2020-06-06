@@ -61,6 +61,21 @@ index_generator:
   per_page: 10
   order_by: -date
 
+#steam游戏库页配置
+steam:
+  enable: true
+  steamId: '76561198182689686' #steam 64位Id
+  path: /Game/index.html
+  title: Steam游戏库
+  quote: '+1+1+1+1+1'
+  tab: all
+  length: 1000
+  imgUrl:
+  proxy:
+    host:
+    port:
+
+
 # Category & Tag
 default_category: uncategorized
 category_map:
