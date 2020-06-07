@@ -7,6 +7,8 @@ date: 2018-02-12 19:00:09
 update:
 tags:
 categories:
+- Python
+- Python基础
 ---
 ## while型循环
 ~~~Python

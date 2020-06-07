@@ -6,7 +6,9 @@ cover: /2019/08/28/Unity脚本开发学习笔记1/head.png
 date: 2019-08-28 12:40:30
 update:
 tags: ['unity']
-categories: unity
+categories:
+  - 游戏开发
+  - unity
 ---
 
 ## Awake() 和 Start()

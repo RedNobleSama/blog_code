@@ -3,10 +3,12 @@ title: 使用Cookiecutter快速搭建Django应用
 toc: true
 mathjx: true
 cover: /2018/03/16/使用Cookiecutter快速搭建Django应用/head.png
-date: 2019-03-16 05:25:20
+date: 2018-03-16 05:25:20
 update:
-tags: [Djangor]
-categories: Django
+tags: [Django]
+categories:
+  - Python
+  - Django
 ---
 
 ## 安装Cookiecutter

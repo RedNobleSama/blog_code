@@ -6,7 +6,9 @@ cover: /2018/05/12/Pipenv管理Python虚拟环境/head.png
 date: 2018-05-12 14:52:37
 update:
 tags: [Python]
-categories: Python
+categories:
+  - Python
+  - Python基础
 ---
 
 <!-- more -->

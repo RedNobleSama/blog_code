@@ -6,7 +6,9 @@ cover: /2018/02/12/python数据类型/head.png
 date: 2018-02-12 17:55:16
 update:
 tags: [Python]
-categories: Python
+categories:
+  - Python
+  - Python基础
 ---
 标准数据类型
 * Python3 中有六个标准的数据类型：

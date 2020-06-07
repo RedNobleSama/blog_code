@@ -6,7 +6,9 @@ cover: /2019/09/01/Unity脚本开发学习笔记2/head.png
 date: 2019-09-01 16:45:51
 update:
 tags: ['unity']
-categories: unity
+categories:
+  - 游戏开发
+  - unity
 ---
 
 ## 按键控制

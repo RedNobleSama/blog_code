@@ -6,7 +6,9 @@ cover: /2018/02/10/python函数/head.png
 date: 2018-02-10 23:03:49
 update:
 tags: [Python]
-categories: Python
+categories:
+  - Python
+  - Python基础
 ---
 ## 函数的定义格式
 ~~~Python

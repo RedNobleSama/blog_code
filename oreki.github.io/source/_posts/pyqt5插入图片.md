@@ -2,11 +2,13 @@
 title: pyqt5插入图片
 toc: true
 mathjx: true
-cover: /2020/01/25/pyqt5插入图片/head.png
-date: 2020-01-25 20:39:56
+cover: /2019/01/25/pyqt5插入图片/head.png
+date: 2019-01-25 20:39:56
 update:
 tags: [Pyqt5]
-categories: Pyqt5
+categories:
+  - Python
+  - Pyqt5
 ---
 ### designer中图片资源插入
 ![](1.png)

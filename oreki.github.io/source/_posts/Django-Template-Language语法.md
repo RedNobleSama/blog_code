@@ -1,16 +1,17 @@
 ---
-title: Django Template Language语法
+title: DjangoTemplateLanguage语法
 toc: true
 mathjx: true
-cover: /2018/05/017/Django Template Language语法/head.png
-date: 2018-05-17 14:52:37
+cover: /2018/05/12/DjangoTemplateLanguage语法/head.png
+date: 2018-05-12 14:52:37
 update:
 tags: [Django]
-categories: Django
+categories:
+  - Python
+  - Django
 ---
 ## 模板继承
 base.html文件，比如上方的导航栏
-
 ~~~
 <!DOCTYPE html>
 <html lang="en">

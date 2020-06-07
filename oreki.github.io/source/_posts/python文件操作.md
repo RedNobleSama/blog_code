@@ -6,7 +6,9 @@ cover: /2018/02/14/python文件操作/head.png
 date: 2018-02-14 23:32:58
 update:
 tags: [Python]
-categories: Python
+categories:
+- Python
+- Python基础
 ---
 ## 基本操作
 ### open（） 打开或者创建一个文件 and close() 关闭文件
