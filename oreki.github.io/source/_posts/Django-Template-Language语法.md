@@ -1,18 +1,18 @@
 ---
-title: DjangoTemplateLanguage语法
+title: Djangotemplate语法
 toc: true
 mathjx: true
-cover: /2018/05/12/DjangoTemplateLanguage语法/head.png
-date: 2018-05-12 14:52:37
+cover: /2018/04/01/鸭子类型/head.png
+date: 2018-04-01 20:46:58
 update:
-tags: [Django]
+tags: ['Django']
 categories:
   - Python
   - Django
 ---
 ## 模板继承
 base.html文件，比如上方的导航栏
-~~~
+~~~html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +36,7 @@ base.html文件，比如上方的导航栏
 ~~~
 其它功能模块的html文件
 
-~~~
+~~~html
 {% extends "base.html" %}
 
 {% block title %}My amazing blog{% endblock %}
@@ -50,20 +50,20 @@ base.html文件，比如上方的导航栏
 ~~~
 
 ## 变量
-~~~
+~~~html
 {{ variable }}
 ~~~
 .或获取变量的属性
 
 循环字典
-~~~
+~~~html
 {% for k, v in defaultdict.items %}
     Do something with k and v here...
 {% endfor %}
 ~~~
 
 ## 过滤器
-~~~
+~~~html
 {{ value|add:"2" }} 字符串或列表相加，注意：字符串是变成整数相加
 {{ first|add:second }}
 {{ value|addslashes }} 单引号前面加上/ 比如把 I’m using Django 变成 I\'m using Django
@@ -109,7 +109,7 @@ force_escape 再关闭转义的区域，强制启用转义
 ~~~
 ## 标签
 for循环标签
-~~~
+~~~html
 <ul>
 {% for athlete in athlete_list %}
     <li>{{ athlete.name }}</li>
@@ -118,7 +118,7 @@ for循环标签
 ~~~
 
 以及for … empty
-~~~
+~~~html
 {% thumbnail article.image "1920x1080" as im %}
     <img src="{{ im.url }}" alt="文章图片" class="card-img-top">
 {% empty %}
@@ -127,7 +127,7 @@ for循环标签
 ~~~
 
 if, elif, and else
-~~~
+~~~html
 {% if athlete_list %}
     Number of athletes: {{ athlete_list|length }}
 {% elif athlete_in_locker_room_list %}
@@ -138,7 +138,7 @@ if, elif, and else
 ~~~
 
 加上条件判断 ==, !=, <, >, <=, >=, in, not in, is, 以及 is not
-~~~
+~~~html
 {% if athlete_list and coach_list or cheerleader_list %}
 {% if somevar == "x" %}
   This appears if variable somevar equals the string "x"
@@ -146,7 +146,7 @@ if, elif, and else
 ~~~
 
 cycle 循环常量或变量
-~~~
+~~~html
 {% for o in some_list %}
     <tr class="{% cycle 'row1' rowvalue2 'row3' %}">
         ...
@@ -155,25 +155,26 @@ cycle 循环常量或变量
 ~~~
 
 filter过滤器，使用单个或多个过滤器
-~~~
+~~~html
 {% filter force_escape|lower %}
     This text will be HTML-escaped, and will appear in all lowercase.
 {% endfilter %}
 ~~~
 
 firstof 输出第一个为True的值
-~~~
+~~~html
 {% firstof var1 var2 var3 %}
 ~~~
 
 extends继承父模板
-~~~
+~~~html
 {% extends "./base2.html" %}
 {% extends "../base1.html" %}
 {% extends "./my/base3.html" %}
 ~~~
+
 now 展示当前日期或时间
-~~~
+~~~html
 {% now "jS F Y H:i" %}
 ~~~
 
@@ -181,11 +182,11 @@ now 展示当前日期或时间
 安全起见，默认开启自动转义；有如下2种方式关闭
 
 对于变量
-~~~
+~~~html
 {{ article.get_markdown|safe }}
 ~~~
 对于block(区域)
-~~~
+~~~html
 Auto-escaping is on by default. Hello {{ name }}
 
 {% autoescape off %}
@@ -198,7 +199,7 @@ Auto-escaping is on by default. Hello {{ name }}
 {% endautoescape %}
 ~~~
 在已关闭转义的区域中启用转义
-~~~
+~~~html
 {% autoescape off %}
     {{ title|escape }}
 {% endautoescape %}
@@ -206,7 +207,7 @@ Auto-escaping is on by default. Hello {{ name }}
 
 ## 方法调用
 比如QuerySet中的方法
-~~~
+~~~html
 {% for tag in article.tags.all %}
     <a href="#"><span class="badge badge-info">{{ tag }}</span></a>
 {% endfor %}

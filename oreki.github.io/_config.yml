@@ -114,7 +114,9 @@ theme: Butterfly
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:RedNobleSama/RedNobleSama.github.io.git
+  repo:
+    gitee: https://gitee.com/orekisama/hexo
+    github: git@github.com:RedNobleSama/RedNobleSama.github.io.git
   branch: master
 
 search:

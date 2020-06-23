@@ -437,7 +437,7 @@ blog_title_font:
 
 # 水平分隔綫
 hr:
-  enable: false
+  enable: true
   icon: '\f21c' #fontawesome上圖標的Unicode
   icon-top: -20px
 
@@ -481,9 +481,9 @@ announcement:
 # busuanzi count for PV / UV in site
 # 訪問人數
 busuanzi:
-  site_uv: false
-  site_pv: false
-  page_pv: false
+  site_uv: true
+  site_pv: true
+  page_pv: true
 
 # 網頁開通時間
 # 格式: 月/日/年 時間
