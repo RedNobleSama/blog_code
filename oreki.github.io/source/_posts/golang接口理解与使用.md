@@ -2,8 +2,8 @@
 title: golang接口理解与使用
 toc: true
 mathjx: true
-cover: /2020/01/17/golang接口理解与使用/head.png
-date: 2020-01-17 21:50:23
+cover: /2019/09/16/golang接口理解与使用/head.png
+date: 2019-09-16 21:50:23
 update:
 tags: ['Golang']
 categories:
