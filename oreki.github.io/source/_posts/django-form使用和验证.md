@@ -1,8 +1,8 @@
 ---
-title: django form使用和验证
+title: django-form使用和验证
 toc: true
 mathjx: true
-cover: /2018/03/23/django form使用和验证/head.png
+cover: /2018/03/23/django-form使用和验证/head.png
 date: 2018-03-23 19:37:11
 update:
 tags: [Python]
