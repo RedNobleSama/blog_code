@@ -60,7 +60,7 @@ class UserFavViewSet(mixins.CreateModelMixin,mixins.ListModelMixin,mixins.Retrie
 from rest_framework import permissions
 
 
-class IsOwnerOrReadOnly(permissions.permissions):
+class IsOwnerOrReadOnly(permissions.BasePermission):
     """
     对象级权限仅允许对象的所有者对其进行编辑
     假设模型实例具有`owner`属性。
