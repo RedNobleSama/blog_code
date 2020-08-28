@@ -14,6 +14,7 @@ categories:
 ### Media文件夹设置和使用
 
 在settings.py文件中写入
+
 ~~~Python
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

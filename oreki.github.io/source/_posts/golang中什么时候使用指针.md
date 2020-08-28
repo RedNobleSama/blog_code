@@ -14,7 +14,8 @@ categories:
 
 ### 使用值类型和指针类型的区别
 首先，我们来看一个计算面积的代码，如下所示。
-~~~Golang
+
+```Go
 package main
 
 import (
@@ -43,7 +44,7 @@ func main() {
     fmt.Println("Width:", rect.width, "Length:", rect.length,"Area:", rect.area())  //通过结构体指针类型的变量调用area()方法
     fmt.Println("Width:", rect.width, "Length:", rect.length,"Area:", rect.area1())
 }
-~~~
+```
 在Go语言中，默认是按值传递。当一个变量当作参数传递的时候，会创建一个变量的副本，然后传递给函数或者方法，你可以看到这个副本的地址和变量的地址是不一样的。当变量当做指针被传递的时候，一个新的指针被创建，它指向变量同样的内存地址，所以你可以将这个指针看成原始变量指针的副本。
 
 ### 故此

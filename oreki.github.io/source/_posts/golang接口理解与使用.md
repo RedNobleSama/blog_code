@@ -18,7 +18,7 @@ go 允许不带任何方法的 interface ，这种类型的 interface 叫 empty 
 
 
 ### interface 变量存储的是实现者的值
-~~~Golang
+~~~go
 //1
 type I interface {    
     Get() int
