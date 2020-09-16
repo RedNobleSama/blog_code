@@ -2,8 +2,8 @@
 title: Django使用命令makemigrations提示NoChanges
 toc: true
 mathjx: true
-cover: /2020/09/16/Django使用命令makemigrations提示NoChanges/head.png
-date: 2020-09-16 01:12:49
+cover: /2020/01/16/Django使用命令makemigrations提示NoChanges/head.png
+date: 2020-01-16 01:12:49
 update:
 tags: ['排错记录']
 categories:
