@@ -64,10 +64,30 @@ bind-address           = 127.0.0.1
 ~~~
 
 进入MYSQL
+查看用户权限
+~~~sql
+select user,host from mysql.user;
+~~~
+
+旧版
 ~~~sql
 grant all on *.* to root@'%' identified by 'root' with grant option;
 flush privileges;
 ~~~
+
+新版
+8.0版本更换了权限设置和密码加密协议，因此会报出42000错误：
+~~~sql
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IDENTIFIED BY 'password' WITH GRANT OPTION' at line 1
+~~~
+
+解决方法：
+~~~sql
+mysql> CREATE USER 'root'@'%' IDENTIFIED BY 'password';
+mysql> GRANT ALL ON db1.* TO 'root'@'%';
+mysql> FLUSH PRIVILEGES;
+~~~
+
 
 重启Mysql
 ~~~Bash
