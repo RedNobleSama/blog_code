@@ -3,11 +3,13 @@ title: TCP协议
 toc: true
 mathjx: true
 cover: /2019/03/15/TCP协议/head.png
-date: 2019-03-15 21:46:32
-update:
-tags: ['计算机网络']
+tags:
+  - 计算机网络
 categories:
   - 网络协议
+abbrlink: 62903
+date: 2019-03-15 21:46:32
+update:
 ---
 
 #### TCP协议

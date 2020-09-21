@@ -3,10 +3,12 @@ title: Linux下安装mysql以及开放远程连接
 toc: true
 mathjx: true
 cover: /2018/06/09/Linux下安装mysql以及开放远程连接/head.png
+tags:
+  - Linux
+categories: Linux
+abbrlink: 7610
 date: 2018-06-09 20:46:46
 update:
-tags: ['Linux']
-categories: Linux
 ---
 
 ### 安装MYSQL

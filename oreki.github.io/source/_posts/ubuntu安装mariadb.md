@@ -3,11 +3,13 @@ title: ubuntu安装mariadb
 toc: true
 mathjx: true
 cover: /2020/05/12/ubuntu安装mariadb/head.png
-date: 2020-05-12 17:40:28
-update:
-tags: ['Linux']
+tags:
+  - Linux
 categories:
   - Linux
+abbrlink: 6886
+date: 2020-05-12 17:40:28
+update:
 ---
 
 ### 安装

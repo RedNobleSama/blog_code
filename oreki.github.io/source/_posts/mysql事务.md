@@ -3,12 +3,14 @@ title: mysql事务
 toc: true
 mathjx: true
 cover: /2018/10/16/mysql事务/head.png
-date: 2018-10-16 21:31:59
-update:
-tags: ['Mysql']
+tags:
+  - Mysql
 categories:
   - 数据库
   - Mysql
+abbrlink: 33118
+date: 2018-10-16 21:31:59
+update:
 ---
 
 #### Mysql事务

@@ -3,12 +3,14 @@ title: python分支结构
 toc: true
 mathjx: true
 cover: /2018/02/12/python分支结构/head.png
-date: 2018-02-12 18:52:37
-update:
-tags: [Python]
+tags:
+  - Python
 categories:
   - Python
   - Python基础
+abbrlink: 12374
+date: 2018-02-12 18:52:37
+update:
 ---
 流程控制: 对计算机代码执行顺序的管理就是流程控制
 

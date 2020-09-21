@@ -3,11 +3,13 @@ title: TLS协议
 toc: true
 mathjx: true
 cover: /2019/03/10/TLS协议/head.png
-date: 2019-03-10 21:24:58
-update:
-tags: ['计算机网络']
+tags:
+  - 计算机网络
 categories:
   - 网络协议
+abbrlink: 46532
+date: 2019-03-10 21:24:58
+update:
 ---
 
 #### TLS 安全传输层

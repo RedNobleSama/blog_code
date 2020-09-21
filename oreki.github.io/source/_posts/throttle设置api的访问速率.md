@@ -3,14 +3,15 @@ title: throttle设置api的访问速率
 toc: true
 mathjx: true
 cover: /2019/04/15/throttle设置api的访问速率/head.png
-date: 2019-04-15 23:12:05
-update:
-tags: ['Django']
+tags:
+  - Django
 categories:
   - Python
   - Django
   - restframework
-
+abbrlink: 44062
+date: 2019-04-15 23:12:05
+update:
 ---
 ### setting.py设置
 在setting.py中添加

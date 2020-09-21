@@ -3,11 +3,13 @@ title: Http协议
 toc: true
 mathjx: true
 cover: /2019/03/10/Http协议/head.png
-date: 2019-03-10 21:46:48
-update:
-tags: ['计算机网络']
+tags:
+  - 计算机网络
 categories:
   - 网络协议
+abbrlink: 15054
+date: 2019-03-10 21:46:48
+update:
 ---
 
 #### HTTP协议

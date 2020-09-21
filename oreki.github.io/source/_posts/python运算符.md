@@ -3,12 +3,14 @@ title: python运算符
 toc: true
 mathjx: true
 cover: /2018/02/12/python运算符/head.png
+tags:
+  - Python
+categories:
+  - Python
+  - Python基础
+abbrlink: 10142
 date: 2018-02-12 16:27:04
 update:
-tags: [Python]
-categories:
-- Python
-- Python基础
 ---
 + Python语言支持以下类型的运算符:
 算术运算符

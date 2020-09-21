@@ -3,12 +3,14 @@ title: python函数
 toc: true
 mathjx: true
 cover: /2018/02/10/python函数/head.png
-date: 2018-02-10 23:03:49
-update:
-tags: [Python]
+tags:
+  - Python
 categories:
   - Python
   - Python基础
+abbrlink: 58505
+date: 2018-02-10 23:03:49
+update:
 ---
 ## 函数的定义格式
 ~~~Python

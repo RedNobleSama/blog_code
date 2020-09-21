@@ -3,12 +3,14 @@ title: Pyqt5嵌套窗口切换
 toc: true
 mathjx: true
 cover: /2019/02/07/Pyqt5嵌套窗口切换/head.png
-date: 2019-02-07 11:53:03
-update:
-tags: ['Python']
+tags:
+  - Python
 categories:
   - Python
   - Pyqt5
+abbrlink: 16895
+date: 2019-02-07 11:53:03
+update:
 ---
 
 ### designer设计

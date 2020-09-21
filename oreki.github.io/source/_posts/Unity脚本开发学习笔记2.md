@@ -3,12 +3,14 @@ title: Unity脚本开发学习笔记2
 toc: true
 mathjx: true
 cover: /2019/09/01/Unity脚本开发学习笔记2/head.png
-date: 2019-09-01 16:45:51
-update:
-tags: ['unity']
+tags:
+  - unity
 categories:
   - 游戏开发
   - unity
+abbrlink: 10133
+date: 2019-09-01 16:45:51
+update:
 ---
 
 ## 按键控制

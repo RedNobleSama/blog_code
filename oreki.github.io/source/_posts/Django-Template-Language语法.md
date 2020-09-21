@@ -3,12 +3,14 @@ title: Djangotemplate语法
 toc: true
 mathjx: true
 cover: /2018/04/01/鸭子类型/head.png
-date: 2018-04-01 20:46:58
-update:
-tags: ['Django']
+tags:
+  - Django
 categories:
   - Python
   - Django
+abbrlink: 34400
+date: 2018-04-01 20:46:58
+update:
 ---
 ## 模板继承
 base.html文件，比如上方的导航栏

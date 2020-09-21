@@ -3,10 +3,12 @@ title: Linux下安装redis以及开放远程连接
 toc: true
 mathjx: true
 cover: /2018/07/03/Linux下安装redis以及开放远程连接/head.png
+tags:
+  - Linux
+categories: Linux
+abbrlink: 39106
 date: 2018-07-03 20:46:58
 update:
-tags: ['Linux']
-categories: Linux
 ---
 
 ### 安装Redis

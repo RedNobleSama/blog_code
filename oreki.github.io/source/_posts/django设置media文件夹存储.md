@@ -3,12 +3,14 @@ title: django设置media文件夹存储
 toc: true
 mathjx: true
 cover: /2018/06/07/django设置media文件夹存储/head.png
-date: 2018-06-07 11:51:29
-update:
-tags: ['Python']
+tags:
+  - Python
 categories:
   - Python
   - Django
+abbrlink: 38620
+date: 2018-06-07 11:51:29
+update:
 ---
 
 ### Media文件夹设置和使用

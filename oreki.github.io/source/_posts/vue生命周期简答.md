@@ -3,12 +3,14 @@ title: vue生命周期简答
 toc: true
 mathjx: true
 cover: /2020/05/16/vue生命周期简答/head.png
-date: 2020-05-16 21:32:58
-update:
-tags: ['Vue.js']
+tags:
+  - Vue.js
 categories:
   - 前端
   - Vue
+abbrlink: 40255
+date: 2020-05-16 21:32:58
+update:
 ---
 
 #### MVVM

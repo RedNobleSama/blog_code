@@ -3,12 +3,14 @@ title: python数据类型
 toc: true
 mathjx: true
 cover: /2018/02/12/python数据类型/head.png
-date: 2018-02-12 17:55:16
-update:
-tags: [Python]
+tags:
+  - Python
 categories:
   - Python
   - Python基础
+abbrlink: 47917
+date: 2018-02-12 17:55:16
+update:
 ---
 标准数据类型
 * Python3 中有六个标准的数据类型：

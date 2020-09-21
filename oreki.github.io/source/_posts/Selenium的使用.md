@@ -3,12 +3,14 @@ title: Selenium的使用
 toc: true
 mathjx: true
 cover: /2019/01/28/Selenium的使用/head.png
-date: 2019-01-28 16:18:24
-update:
-tags: ['Selenuim']
+tags:
+  - Selenuim
 categories:
   - Python
   - Selenuim
+abbrlink: 42031
+date: 2019-01-28 16:18:24
+update:
 ---
 ## Selenium的使用
 

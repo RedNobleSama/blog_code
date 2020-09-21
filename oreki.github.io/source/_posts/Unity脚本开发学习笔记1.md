@@ -3,12 +3,14 @@ title: Unity脚本开发学习笔记1
 toc: true
 mathjx: true
 cover: /2019/08/28/Unity脚本开发学习笔记1/head.png
-date: 2019-08-28 12:40:30
-update:
-tags: ['unity']
+tags:
+  - unity
 categories:
   - 游戏开发
   - unity
+abbrlink: 9941
+date: 2019-08-28 12:40:30
+update:
 ---
 
 ## Awake() 和 Start()

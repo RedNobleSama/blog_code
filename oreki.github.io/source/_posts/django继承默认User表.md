@@ -3,12 +3,14 @@ title: django继承默认User表
 toc: true
 mathjx: true
 cover: /2018/06/01/django继承默认User表/head.png
-date: 2018-06-01 11:52:18
-update:
-tags: ['Python']
+tags:
+  - Python
 categories:
   - Python
   - Django
+abbrlink: 42460
+date: 2018-06-01 11:52:18
+update:
 ---
 ### 继承默认User表
 models.py中继承AbstractUser类

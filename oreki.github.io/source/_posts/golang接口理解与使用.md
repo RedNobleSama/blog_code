@@ -3,12 +3,14 @@ title: golang接口理解与使用
 toc: true
 mathjx: true
 cover: /2019/09/16/golang接口理解与使用/head.png
-date: 2019-09-16 21:50:23
-update:
-tags: ['Golang']
+tags:
+  - Golang
 categories:
   - Golang
   - Golang基础
+abbrlink: 58611
+date: 2019-09-16 21:50:23
+update:
 ---
 
 ### interface是一种类型

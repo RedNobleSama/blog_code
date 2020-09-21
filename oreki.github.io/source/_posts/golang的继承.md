@@ -3,12 +3,14 @@ title: golang的继承
 toc: true
 mathjx: true
 cover: /2019/09/18/golang的继承/head.png
-date: 2019-09-18 01:34:28
-update:
-tags: ['Golang']
+tags:
+  - Golang
 categories:
   - Golang
   - Golang基础
+abbrlink: 26472
+date: 2019-09-18 01:34:28
+update:
 ---
 
 对于 go 语言的继承，之前总是模模糊糊的分不清是什么。不知道如何通过何种方式来继承的。

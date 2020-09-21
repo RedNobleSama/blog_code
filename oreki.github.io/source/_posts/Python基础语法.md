@@ -3,12 +3,14 @@ title: Python基础语法
 toc: true
 mathjx: true
 cover: /2018/02/10/Python基础语法/head.png
-date: 2018-02-10 15:34:56
-update:
-tags: [Python]
+tags:
+  - Python
 categories:
   - Python
   - Python基础
+abbrlink: 48931
+date: 2018-02-10 15:34:56
+update:
 ---
 ## input输入
 * input()的小括号中放入的是，提示信息，用来在获取数据之前给用户的一个简单提示

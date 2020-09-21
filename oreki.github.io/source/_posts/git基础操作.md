@@ -2,11 +2,13 @@
 title: git基础操作
 toc: true
 mathjx: true
-date: 2018-01-06 11:43:36
-tags: [Git]
+tags:
+  - Git
 categories: Git
 cover: /2018/01/06/git基础操作/添加sshkey.png
 indexing: true
+abbrlink: 54710
+date: 2018-01-06 11:43:36
 ---
 
 ### 用户信息配置

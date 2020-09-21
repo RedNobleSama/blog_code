@@ -3,12 +3,14 @@ title: django-form使用和验证
 toc: true
 mathjx: true
 cover: /2018/03/23/django-form使用和验证/head.png
-date: 2018-03-23 19:37:11
-update:
-tags: [Python]
+tags:
+  - Python
 categories:
   - Python
   - Django
+abbrlink: 10253
+date: 2018-03-23 19:37:11
+update:
 ---
 
 ### 创建Form

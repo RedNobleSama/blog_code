@@ -3,12 +3,14 @@ title: golang中什么时候使用指针
 toc: true
 mathjx: true
 cover: /2019/09/17/golang中什么时候使用指针/head.png
-date: 2019-09-17 14:22:35
-update:
-tags: ['Golang']
+tags:
+  - Golang
 categories:
   - Golang
   - Golang基础
+abbrlink: 34837
+date: 2019-09-17 14:22:35
+update:
 ---
 什么是指针：即一个指针变量指向一个值的内存地址。
 

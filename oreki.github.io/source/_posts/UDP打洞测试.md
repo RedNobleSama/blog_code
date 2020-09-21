@@ -3,12 +3,14 @@ title: UDP打洞测试
 toc: true
 mathjx: true
 cover: /2018/09/13/UDP打洞测试/head.png
-date: 2018-09-13 18:58:44
-update:
-tags: ['Python']
+tags:
+  - Python
 categories:
   - Python
   - 网络编程
+abbrlink: 18672
+date: 2018-09-13 18:58:44
+update:
 ---
 
 UDP打洞实现了私有网络中的Internet主机之间建立双向UDP连接的方法。不过由于NAT的行为是非标准化的，这方法不能应用于所有类型的NAT。

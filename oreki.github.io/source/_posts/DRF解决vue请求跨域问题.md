@@ -3,13 +3,15 @@ title: DRF解决vue请求跨域问题
 toc: true
 mathjx: true
 cover: /2019/10/16/DRF解决vue请求跨域问题/head.png
-date: 2019-10-16 03:51:04
-update:
-tags: ['Python']
+tags:
+  - Python
 categories:
   - Python
   - Django
   - restframework
+abbrlink: 14466
+date: 2019-10-16 03:51:04
+update:
 ---
 ### 什么是跨域
 在浏览器上当前访问的网站向另一个网站发送请求获取数据的过程就是跨域请求。

@@ -3,12 +3,14 @@ title: Pipenv管理Python虚拟环境
 toc: true
 mathjx: true
 cover: /2018/05/12/Pipenv管理Python虚拟环境/head.png
-date: 2018-05-12 14:52:37
-update:
-tags: [Python]
+tags:
+  - Python
 categories:
   - Python
   - Python基础
+abbrlink: 56325
+date: 2018-05-12 14:52:37
+update:
 ---
 
 <!-- more -->

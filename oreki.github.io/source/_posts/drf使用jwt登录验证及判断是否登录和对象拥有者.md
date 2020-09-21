@@ -3,13 +3,15 @@ title: drf使用jwt登录验证及判断是否登录和对象拥有者
 toc: true
 mathjx: true
 cover: /2019/03/17/drf使用jwt登录验证及判断是否登录和对象拥有者/head.png
-date: 2019-03-17 23:12:29
-update:
-tags: ['Django']
+tags:
+  - Django
 categories:
   - Python
   - Django
   - restframework
+abbrlink: 46396
+date: 2019-03-17 23:12:29
+update:
 ---
 
 ### 安装

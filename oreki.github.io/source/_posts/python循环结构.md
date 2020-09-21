@@ -3,12 +3,13 @@ title: python循环结构
 toc: true
 mathjx: true
 cover: /2018/02/12/python循环结构/head.png
+categories:
+  - Python
+  - Python基础
+abbrlink: 3834
 date: 2018-02-12 19:00:09
 update:
 tags:
-categories:
-- Python
-- Python基础
 ---
 ## while型循环
 ~~~Python

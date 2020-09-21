@@ -3,13 +3,15 @@ title: drf配置redis缓存
 toc: true
 mathjx: true
 cover: /2019/04/15/drf配置redis缓存/head.png
-date: 2019-04-15 23:12:29
-update:
-tags: ['Django']
+tags:
+  - Django
 categories:
   - Python
   - Django
   - restframework
+abbrlink: 25182
+date: 2019-04-15 23:12:29
+update:
 ---
 
 ### 安装django-redis,drf-extensions

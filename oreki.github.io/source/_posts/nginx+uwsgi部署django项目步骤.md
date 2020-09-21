@@ -3,12 +3,14 @@ title: nginx+uwsgi部署django项目步骤
 toc: true
 mathjx: true
 cover: /2019/12/21/nginx+uwsgi部署django项目步骤/head.png
-date: 2019-12-21 01:13:10
-update:
-tags: ['运维']
+tags:
+  - 运维
 categories:
   - 运维
   - 项目部署
+abbrlink: 53923
+date: 2019-12-21 01:13:10
+update:
 ---
 
 ### 项目部署
