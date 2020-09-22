@@ -115,8 +115,9 @@ theme: Butterfly
 deploy:
   type: git
   repo:
-    gitee: http://gitee.com/orekisama/hexo
+    gitee: https://gitee.com/orekisama/orekisama.git
     github: https://github.com/RedNobleSama/RedNobleSama.github.io.git
+    coding: https://e.coding.net/rednoble/oreki/rednoble.git
   branch: master
 
 search:

@@ -21,6 +21,10 @@ menu:
 # ---------------
 favicon: https://res.cloudinary.com/oreki/image/upload/v1583610633/%E7%89%A9%E7%90%86%E4%B8%96%E7%95%8C_gfftjy.png
 
+inject:
+  head: #引入CSS
+    <link rel="stylesheet" href="/css/iconfont.css">
+
 # PWA
 # See https://github.com/JLHwung/hexo-offline
 # ---------------
@@ -54,8 +58,12 @@ copy:
 #   icon: link
 # ---------------
 social:
+  fa fa-qq: 912550157
+  # iconfont icon-bilibili card_icon: https://github.com/RedNobleSama
   fa fa-github: https://github.com/RedNobleSama
-  # fa fa-bilibili: 912550157@qq.com
+  fa fa-envelope: mailto:a912550157@gmail.com
+  fa fa-youtube: https://www.youtube.com/channel/UCRCGsyJBIncG5nMrSdamchg/featured?view_as=public
+  fa fa-twitter: https://twitter.com/orekisame
   # fa fa-rss: /atom.xml
 
 ####    search    ####
@@ -136,7 +144,10 @@ post_meta:
 
 # Please see doc for more details: https://jerryc.me/posts/21cfbf15/#字数统计
 wordcount:
-  enable: false
+  enable: true
+  post_wordcount: true
+  min2read: true
+  total_wordcount: true
 
 toc:
   enable: true
@@ -153,7 +164,7 @@ post_copyright:
 
 # 自動節選
 auto_excerpt:
-  enable: false
+  enable: true
   length: 150
 
 ####    Share System    ####
@@ -228,7 +239,7 @@ valine:
 
 #####     Footer Settings    ####
 # ------------------------------------
-since: 2018
+since: 2017
 
 footer_custom_text:
 
@@ -467,7 +478,7 @@ aside_mobile: true
 aside:
   position: right # left or right
   card_author: true
-  card_announcement: true
+  # card_announcement: true
   card_recent_post: true
   card_categories: true
   card_tags: true
@@ -481,8 +492,8 @@ announcement:
 # busuanzi count for PV / UV in site
 # 訪問人數
 busuanzi:
-  site_uv: false
-  site_pv: false
+  site_uv: true
+  site_pv: true
   page_pv: false
 
 # 網頁開通時間
@@ -490,7 +501,7 @@ busuanzi:
 # 也可以寫成 年/月/日 時間
 runtimeshow:
   enable: true
-  start_date: 10/7/2018 15:16:17
+  start_date: 10/7/2017 15:16:17
 
 ####   右下角按鈕  ####
 #----------------------------------------------
@@ -659,7 +670,10 @@ CDN:
 
   translate: /js/tw_cn.js
 
-  ##侧边栏歌单
+# 加載動畫 Loading Animation
+preloader: true
+
+##侧边栏歌单
 aplayer:
   enable: true
   js:
