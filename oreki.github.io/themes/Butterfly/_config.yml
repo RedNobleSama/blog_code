@@ -492,8 +492,8 @@ announcement:
 # busuanzi count for PV / UV in site
 # 訪問人數
 busuanzi:
-  site_uv: true
-  site_pv: true
+  site_uv: false
+  site_pv: false
   page_pv: false
 
 # 網頁開通時間
