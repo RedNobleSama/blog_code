@@ -4,7 +4,7 @@ toc: true
 mathjx: true
 cover: /2019/09/16/golang接口理解与使用/head.png
 tags:
-  - Golang
+  ['Golang']
 categories:
   - Golang
   - Golang基础

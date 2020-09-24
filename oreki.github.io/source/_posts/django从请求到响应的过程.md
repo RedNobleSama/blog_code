@@ -2,14 +2,14 @@
 title: django从请求到响应的过程
 toc: true
 mathjx: true
-cover: /2020/09/23/django从请求到响应的过程/head.png
+cover: /2020/01/23/django从请求到响应的过程/head.png
 tags:
   - Python
 categories:
   - Python
   - Django
 abbrlink: 26339
-date: 2020-09-23 00:35:36
+date: 2020-01-23 00:35:36
 update:
 ---
 #### Django请求生命周期的概念
