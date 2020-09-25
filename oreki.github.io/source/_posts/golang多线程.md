@@ -3,12 +3,14 @@ title: golang多线程
 toc: true
 mathjx: true
 cover: /2020/09/25/golang多线程/head.png
-date: 2020-09-25 15:28:56
-update:
-tags: ['Golang']
+tags:
+  - Golang
 categories:
   - Golang
   - Golang基础
+abbrlink: 47486
+date: 2020-09-25 15:28:56
+update:
 ---
 
 ### golang多线程
