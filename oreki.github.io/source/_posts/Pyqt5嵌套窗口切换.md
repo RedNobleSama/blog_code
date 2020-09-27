@@ -2,19 +2,22 @@
 title: Pyqt5嵌套窗口切换
 toc: true
 mathjx: true
-cover: /2019/02/07/Pyqt5嵌套窗口切换/head.png
+cover: /2020/05/07/Pyqt5嵌套窗口切换/head.png
 tags:
   - Python
 categories:
   - Python
   - Pyqt5
 abbrlink: 16895
-date: 2019-02-07 11:53:03
+date: 2020-05-07 11:53:03
 update:
 ---
 
-### designer设计
+### 使用designer设计
 使用QstackerWidget 进行多界面切换
+
+在stackedWidget对象中插入页，即可实现多页面。
+将控件放入指定对应页面。
 ![](designer设计图.png)
 
 ### Ui代码
@@ -76,6 +79,7 @@ class Ui_MainWindow(object):
 ~~~
 
 ### 控制代码
+button按钮绑定对应事件进行页面展示。
 ~~~Python
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
