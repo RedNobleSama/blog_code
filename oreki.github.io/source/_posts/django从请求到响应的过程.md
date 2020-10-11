@@ -54,3 +54,21 @@ MIDDLEWARE_CLASSES = [
 中间件要么对来自用户的数据进行预处理，然后发送给应用；要么在应用将响应负载返回给用户之前，对结果数据进行一些最终的调整。
 
 通俗一点，在django中，中间能够帮我们准备好request这个对象，然后应用可以直接使用request对象获取到各类数据，也帮我们将response添加头部，状态码等。
+例如：
+1. Django项目中默认启用了csrf保护,每次请求时通过CSRF中间件检查请求中是否有正确#token值
+
+2. 当用户在页面上发送请求时，通过自定义的认证中间件，判断用户是否已经登陆，未登陆就去登陆。
+
+3. 当有用户请求过来时，判断用户是否在白名单或者在黑名单里
+
+其内置的五个方法:
+
+1. process_request : 请求进来时,权限认证
+
+2. process_view : 路由匹配之后,能够得到视图函数
+
+3. process_exception : 异常时执行
+
+4. process_template_responseprocess : 模板渲染时执行
+
+5. process_response : 请求有响应时执行
