@@ -1,0 +1,123 @@
+---
+title: django集成支付宝
+toc: true
+mathjx: true
+cover: /2020/05/04/django集成支付宝/head.png
+tags:
+  - Python
+categories:
+  - Python
+  - Django
+abbrlink: 47258
+date: 2020-05-04 19:43:49
+update:
+---
+### 支付宝支付
+#### Alipay
+阿里的支付也就是支付宝，官网以及出了Python的SDK了~所以要先下载
+~~~
+pip install alipay-sdk-python
+~~~
+
+#### 具体操作
+##### 第一步 访问沙箱环境地址，注册一个商家账户
+https://openhome.alipay.com/platform/appDaily.htm?tab=info
+按照他要求的方式生成商户的公钥和私钥~把公钥放入网站~私钥自己留着签名用~~
+
+下面是商户信息以及卖家信息~下载一个支付宝的沙箱环境~
+
+然后按照下面的账号和密码登录和支付~~只支持安卓的~
+按照他要求的方式生成商户的公钥和私钥~把公钥放入网站~私钥自己留着签名用~~
+
+下面是商户信息以及卖家信息~下载一个支付宝的沙箱环境~
+
+然后按照下面的账号和密码登录和支付~~只支持安卓的~
+
+##### 第二步 阅读文档 找到一个适合自己的API
+
+##### 代码实例
+~~~Python
+from django.conf.urls import url
+from django.contrib import admin
+from demo.views import AliPayView, PayHandlerView
+urlpatterns = [
+  url(r'^admin/', admin.site.urls),
+  url(r'^pay$', AliPayView.as_view()),
+  url(r'^alipay_handler', PayHandlerView.as_view()),
+]
+~~~
+
+~~~python
+from django.shortcuts import render, redirect
+from django.http import HttpResponse
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from alipay.aop.api.DefaultAlipayClient import DefaultAlipayClient
+from alipay.aop.api.AlipayClientConfig import AlipayClientConfig
+from alipay.aop.api.domain.AlipayTradePrecreateModel import AlipayTradePrecreateModel
+from alipay.aop.api.request. AlipayTradePrecreateRequest import AlipayTradePrecreateRequest
+from alipay.aop.api.domain.AlipayTradePagePayModel import AlipayTradePagePayModel
+from alipay.aop.api.request.AlipayTradePagePayRequest import AlipayTradePagePayRequest
+import time
+# Create your views here.
+# 沙箱环境地址：https://openhome.alipay.com/platform/appDaily.htm?tab=info
+# "https://openapi.alipaydev.com/gateway.do", APP_ID, APP_PRIVATE_KEY, "json", CHARSET, ALIPAY_PUBLIC_KEY, "RSA2"
+def ali_pay():
+  # 为阿里支付实例化一个配置信息对象
+  alipay_config = AlipayClientConfig(sandbox_debug=True)
+  # 初始化各种配置信息
+  # 阿里提供服务的接口
+  alipay_config.server_url = "https://openapi.alipaydev.com/gateway.do"
+  # 申请的沙箱环境的app_id
+  alipay_config.app_id = "2016091800540924"
+  # 商户的私钥
+  with open("keys/app_private_key.txt") as f: alipay_config.app_private_key = f.read()
+  # 阿里的公钥
+  with open("keys/alipay_public_key.txt") as f: alipay_config.alipay_public_key = f.read()
+  # 实例化一个支付对象并返回
+  alipay_client = DefaultAlipayClient(alipay_client_config=alipay_config)
+  return alipay_client
+
+
+class AliPayView(APIView):
+  def get(self, request):
+    return render(request, "pay.html")
+    # 生成支付宝自带页面的API
+  def post(self, request):
+    # 得到阿里支付的实例化对象
+    client = ali_pay()
+    # 为API生成一个模板对象 初始化参数用的
+    model = AlipayTradePagePayModel()
+    # 订单号
+    model.out_trade_no = "pay" + str(time.time())
+    # 金额
+    model.total_amount = 8888
+    # 商品标题
+    model.subject = "测试"
+    # 商品详细内容
+    model.body = "支付宝测试"
+    # 销售产品码，与支付宝签约的产品码名称
+    model.product_code = "FAST_INSTANT_TRADE_PAY"
+    # 实例化一个请求对象
+    request = AlipayTradePagePayRequest(biz_model=model)
+    # get请求 用户支付成功后返回的页面请求地址
+    request.return_url = "http://140.143.63.45:8000/alipay_handler"
+    # post请求 用户支付成功通知商户的请求地址
+    request.notify_url = "http://140.143.63.45:8000/alipay_handler"
+    # 利用阿里支付对象发一个获得页面的请求 参数是request
+    response = client.page_execute(request, http_method="GET")
+    return redirect(response)
+
+
+  class PayHandlerView(APIView):
+    def get(self, request):
+      # return_url的回调地址
+      print(request.data)
+      # 用户支付成功之后回到哪
+      return HttpResponse("return_url测试")
+    def post(self, request):
+      print(request.data) # 用户支付成功 在这里修改订单状态以及优惠券贝里等等情况
+      return HttpResponse("notify_url")
+
+views.py
+~~~
