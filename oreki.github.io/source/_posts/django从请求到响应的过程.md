@@ -36,6 +36,10 @@ WSGI：全称是Web Server Gateway interface, WSGI不是服务器，也不用于
 
 客户端发送一次请求后，最先处理请求的实际上是 web 服务器就是我们经常说的 nginx、Apache 这类的 web 服务器，然后web服务器再把请求交给web应用程序(如django)处理，这中间的中介就是WSGI，它把 web 服务器和 web 框架 (Django) 连接起来。
 
+Django自带的wsgi服务是单线程的，适用于开发阶段。部署到生产环境时一般使用nginx代理服务器实现异步多线程(Apache是同步的，不适用于高并发处理),能处理理论高达五万并发请求。在Django2.0开始提出异步，在ORM做了初步使用，但不完全异步，3.0以后实现异步处理函数，基于Python的协程实现（不是greenlet这些第三方库，是asyncio库以及ansync/await关键字实现的）,使用的是Django特有的asgi服务器，这个服务器可以处理同步和异步请求。
+
+Django异步多线程场配合celery框架来实现，celery是一个用python开发的分布式任务队列框架，支持线程/进程处理调度。
+
 
 #### 中间件基本概念
 顾名思义，中间件是位于Web服务器端和Web应用之间的，它可以添加额外的功能。当我们创建一个django项目(通过pycharm)，它会自动帮我们设置一些必要的中间件。

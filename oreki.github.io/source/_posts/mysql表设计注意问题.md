@@ -8,8 +8,9 @@ date: 2019-10-07 15:04:30
 update:
 tags: ['数据库']
 categories:
-	— 数据库
-	— Mysql
+	- 数据库
+	- Mysql
+
 ---
 
 <!-- more -->
