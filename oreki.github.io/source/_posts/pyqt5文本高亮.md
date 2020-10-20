@@ -2,14 +2,14 @@
 title: pyqt5文本高亮
 toc: true
 mathjx: true
-cover: /2020/10/15/pyqt5文本高亮/head.png
+cover: /2020/04/15/pyqt5文本高亮/head.png
 tags:
   - Python
 categories:
   - Python
   - Pyqt5
 abbrlink: 32696
-date: 2020-10-15 16:12:03
+date: 2020-04-15 16:12:03
 update:
 ---
 
@@ -26,7 +26,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             # 方法，避免由于文件读写时产生IOError，导致close()
             # 不会调用，需要try...finally来实现的不便。
             data = f.read()  # 将文件读取出来
-    
+
         self.textEdit.setPlainText(data)  # 将读取到的内容放到textEdit小部件中
         li = ['def', 'import', 'from', 'print'] # 高亮的关键字
         for i in li:
@@ -40,7 +40,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.textEdit.moveCursor(QTextCursor.Start)
             while self.textEdit.find(text, QTextDocument.FindWholeWords):  # 查找所有文字
                 self.mergeFormatOnWordOrSelection(fmt)
-    
+
     def mergeFormatOnWordOrSelection(self, format):
         cursor = self.textEdit.textCursor()
         if not cursor.hasSelection():
