@@ -1,16 +1,5 @@
 ---
-title: django从请求到响应的过程
-toc: true
-mathjx: true
-cover: /2020/01/23/django从请求到响应的过程/head.png
-tags:
-  - Python
-categories:
-  - Python
-  - Django
-abbrlink: 26339
-date: 2020-01-23 00:35:36
-update:
+abbrlink: 60599
 ---
 #### Django请求生命周期的概念
 从用户输入URL到用户看到网页的整个过程
@@ -36,10 +25,6 @@ WSGI：全称是Web Server Gateway interface, WSGI不是服务器，也不用于
 
 客户端发送一次请求后，最先处理请求的实际上是 web 服务器就是我们经常说的 nginx、Apache 这类的 web 服务器，然后web服务器再把请求交给web应用程序(如django)处理，这中间的中介就是WSGI，它把 web 服务器和 web 框架 (Django) 连接起来。
 
-Django自带的wsgi服务是单线程的，适用于开发阶段。部署到生产环境时一般使用nginx代理服务器实现异步多线程(Apache是同步的，不适用于高并发处理),能处理理论高达五万并发请求。在Django2.0开始提出异步，在ORM做了初步使用，但不完全异步，3.0以后实现异步处理函数，基于Python的协程实现（不是greenlet这些第三方库，是asyncio库以及ansync/await关键字实现的）,使用的是Django特有的asgi服务器，这个服务器可以处理同步和异步请求。
-
-Django异步多线程场配合celery框架来实现，celery是一个用python开发的分布式任务队列框架，支持线程/进程处理调度。
-
 
 #### 中间件基本概念
 顾名思义，中间件是位于Web服务器端和Web应用之间的，它可以添加额外的功能。当我们创建一个django项目(通过pycharm)，它会自动帮我们设置一些必要的中间件。
@@ -58,36 +43,5 @@ MIDDLEWARE_CLASSES = [
 中间件要么对来自用户的数据进行预处理，然后发送给应用；要么在应用将响应负载返回给用户之前，对结果数据进行一些最终的调整。
 
 通俗一点，在django中，中间能够帮我们准备好request这个对象，然后应用可以直接使用request对象获取到各类数据，也帮我们将response添加头部，状态码等。
-例如：
-1. Django项目中默认启用了csrf保护,每次请求时通过CSRF中间件检查请求中是否有正确#token值
 
-2. 当用户在页面上发送请求时，通过自定义的认证中间件，判断用户是否已经登陆，未登陆就去登陆。
 
-3. 当有用户请求过来时，判断用户是否在白名单或者在黑名单里
-
-其内置的五个方法:
-
-1. process_request : 请求进来时,权限认证
-
-2. process_view : 路由匹配之后,能够得到视图函数
-
-3. process_exception : 异常时执行
-
-4. process_template_responseprocess : 模板渲染时执行
-
-5. process_response : 请求有响应时执行、
-
-#### ORM 对象关系映射
-一种程序技术，用于实现面向对象编程语言里不同类型系统的数据之间的转换。
-几乎所有的程序里面，都存在对象和关系数据库。在业务逻辑层和用户界面层中，我们是面向对象的。当对象信息发生变化的时候，我们需要把对象的信息保存在关系数据库中。
-ORM解决的主要问题是对象关系的映射。
-
-ORM的技术特点：
-1. 提高了开发效率。
-2. 不会存在sql语句编写不规范的问题。
-
-### Django常见的线上部署方式
-Nginx+uwsgi
-
-nginx作为服务器最前端，负责接收client的所有请求，统一管理。静态请求由Nginx自己处理。
-非静态请求通过uwsgi传递给Django，由Django来进行处理，从而完成一次WEB请求

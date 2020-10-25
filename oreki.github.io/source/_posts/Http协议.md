@@ -110,6 +110,12 @@ Cookie实际上是一小段的文本信息。客户端请求服务器，如果�
 
 Cookie存储的数据量很受限制,大多数浏览器支持最大容量为4K
 
+Cookie 类型
+1. 普通cookie： 服务端和js都可以创建，都可以访问。
+2. HttpOnly cookie: 只能由服务端创建，JS无法读取。
+3. 安全的cookie（https）： 服务端和JS都可以创建，JS仅在HTTPS下访问。
+
+
 ##### Session
 Session是另一种记录客户状态的机制，不同的是Cookie保存在客户端浏览器中，而Session保存在服务器上。
 

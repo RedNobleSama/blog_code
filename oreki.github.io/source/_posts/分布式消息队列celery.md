@@ -11,6 +11,16 @@ categories:
   - Python
 ---
 
+### celery基本原理
+
+1、客户端也就是python（django/flask等）发布任务
+
+2、发布的任务存到任务队列里面，可以以redis、rabbitMQ、MessageQueue、MySQL存储，一般在django/flask程序里redis居多
+
+3、任务处理者会不断从任务队列里面获取任务执行
+
+
+
 ### Celery设计
 celery由五大模块实现。
 
